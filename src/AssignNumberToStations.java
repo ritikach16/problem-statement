@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
-public class AssignNumberToStations {
+public class AssignNumberToStations implements AssignCode{
+    @Override
    public HashMap<String, Integer> assignNumber(){
        HashMap<String, Integer> stationMap = new HashMap<>();
         stationMap.put("Mayur Vihar", 0);
@@ -11,6 +12,7 @@ public class AssignNumberToStations {
        return stationMap;
     }
 
+    @Override
     public HashMap<Integer, String> assignName(){
         HashMap<Integer, String> stationMap = new HashMap<>();
         stationMap.put(0, "Mayur Vihar");

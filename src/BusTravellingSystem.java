@@ -25,7 +25,13 @@ public class BusTravellingSystem {
 
         Map graph = new Map(edges, n);
         FindShortestPath shortestPath = new FindShortestPath();
+
+        if(stationCodeMap.containsKey(dest) && stationCodeMap.containsKey(src)){
             shortestPath.findShortestPaths(graph, stationCodeMap.get(src), n, stationCodeMap.get(dest), stationNameMap);
+        }
+        else{
+            System.out.println("Please provide a valid station name");
+        }
     }
 
 }

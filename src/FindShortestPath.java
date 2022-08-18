@@ -1,8 +1,9 @@
 import java.util.*;
 
-public class FindShortestPath {
+public class FindShortestPath implements FindPath{
 
-    public static void findShortestPaths(Map graph, int source, int n, int dest, HashMap<Integer, String> stationMap)
+    @Override
+    public void findShortestPaths(Map graph, int source, int n, int dest, HashMap<Integer, String> stationMap)
     {
         if(source < 0 || dest < 0){
             System.out.println("Please enter the correct station details");

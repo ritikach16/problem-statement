@@ -1,9 +1,10 @@
 import java.util.HashMap;
 import java.util.List;
 
-public class GetRoutes {
+public class GetRoutes implements GetAllRoutes{
 
-    public static void getRoute(int[] prev, int i, List<Integer> route)
+    @Override
+    public void getRoute(int[] prev, int i, List<Integer> route)
     {
         if (i >= 0)
         {

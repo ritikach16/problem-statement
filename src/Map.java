@@ -7,6 +7,10 @@ public class Map {
 
     Map(List<Route> routes, int n)
     {
+        if(n < 1){
+            System.out.println("Please provide valid stations count");
+            return;
+        }
         adjList = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
